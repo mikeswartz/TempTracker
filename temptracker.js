@@ -46,7 +46,7 @@ class TempTracker {
             this.count++            
             this.mean = Math.floor((this.combined / this.count))
         } catch(e) {
-            console.log(e)
+            throw e
         }        
     }
 
