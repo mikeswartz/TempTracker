@@ -1,33 +1,14 @@
-/* 
-TempTracker class for tracking temperatures and returning temperatures provided.
-Temperature range set on initialization of TempTracker class.  
-____________________________________________________________________________________
-
-Example:
-
-let track = new TempTracker(120, -40);
-let tempArr = [104,98,-5,-2,115,-200]
-
-tempArr.map((item,idx) => {
-    track.insert = item
-})
-
-console.log('------------- | -----')
-console.log('track.getMean | ', track.getMean)
-console.log('track.getMax  | ', track.getMax)
-console.log('track.getMin  | ', track.getMin)
-console.log('')
-
-
-____________________________________________________________________________________
-
-Output:
-------------- | -----
-track.getMean |  45
-track.getMax  |  115
-track.getMin  |  -40
-
-**********************/
+/**
+ * Initialize the class with a temperature range using maxTemp and minTemp.
+ *
+ * Use the setter `insert` to set the current temp integer value
+ *
+ * Use the getters `getMax` or `getMin` or `getMean` to retrieve 
+ * their respective integer values
+ *
+ * @param  maxTemp the integer for the max allowed temperature
+ * @param  minTemp the integer for the minimum allowed temperature
+ */
 
 class TempTracker {
     constructor(maxTemp, minTemp) {
